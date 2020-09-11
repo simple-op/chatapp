@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  
+}
+body{
+  background-image: url(https://i.pinimg.com/originals/c4/83/4c/c4834c5504784004556ff0fbd89ebf98.png);
+  background-size: cover;
 }
 
 .App-logo {

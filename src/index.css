@@ -5,9 +5,116 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#message{
+  width: 70%;
+  padding: 10px;
+  background-color:lightcyan;
+  position:fixed;
+  bottom: 10px;
+  left: 5%;
+  border-radius: 50px;
+  border: solid dodgerblue;
+  outline: none;
+  font-size: large;
+
+}
+button {
+  padding: 10px;
+}
+img{
+   height: 35px;
+   position:fixed;
+   bottom: 10px;
+   right: 5%;
+   background-color: aqua;
+   border-radius: 50%;
+   padding: 5px;
+
+   
+  
+
+}
+
+.message{
+  background-color: black;
+  width: 70%;
+  margin:10px;
+  padding: 10px;
+  text-align: left;
+  color:white;
+  border-radius: 15px;
+  contain: content;
+  padding-left: 20px;
+  font-family: sans-serif;
+
+
+
+}
+
+.messageOwner{
+  text-align: right;
+  padding-right: 20px;
+  float: right;
+
+}
+
+.userOwner{
+
+}
+
+
+
+.user{
+      /* background-color:lightcyan; */
+     color:dodgerblue;
+     font-weight: bold;
+     margin: -5px;
+     
+       
+}
+
+#blank{
+  padding: 50px;
+}
+
+.text{
+   /* border-top: solid white 0.1px; */
+   padding: 10px;
+}
+input{
+  padding: 10px;
+  border-radius: 20px;
+  border: solid dodgerblue;
+  outline: none;
+  font-size: large;
+  margin: 10px;
+}
+
+button{
+  padding: 10px;
+  border-radius: 20px;
+  border: solid dodgerblue;
+  outline: none;
+  font-size: large;
+  margin: 10px;
+  background-color: dodgerblue
+  ;
+  color:white;
+  
+}
+
+header{
+  font-size:xx-large ;
+  color: white;
+  font-weight:bold ;
+  padding: 20px;
+  
 }
