@@ -6,11 +6,15 @@ import Input from './Input';
 import firebase from "firebase";
 import axios from "axios";
 import Form from  "./Form";
+var audio = new Audio('that-was-quick.mp3');
+// audio.muted=true;
+// audio.autoplay=true;
+
 
 const user={
   user:"",
   email:"",
-  password:""
+  password:"" 
 }
 
 
@@ -32,6 +36,7 @@ class App extends React.Component {
   this.db=firebase.firestore()
  }
  componentDidMount(){
+ 
         
     // Simple POST request with a JSON body using axios
     
@@ -51,6 +56,9 @@ class App extends React.Component {
     this.setState({
       messages
    })
+
+   audio.play();
+    // audio.play();
    
   })
     
@@ -78,20 +86,26 @@ class App extends React.Component {
   console.log(event)
   
 const article = { email:user.email,password:user.password };
-    axios.post('http://localhost:8000/login', article).then((resp)=> {user.user=resp.data.name
+    axios.post('http://192.168.0.108:8000/login', article).then((resp)=> {user.user=resp.data.name
     
       
       if(!user.user){
           alert("Wrong username/passcode")
       }
      else{
+      
       this.componentDidMount();
-      }  }); 
+
+     
+      
+      } 
+       }); 
 
   
 }
 
-  send=(a)=>{
+  send=()=>{
+      
       const val=document.getElementById("message").value;
       console.log(val)
       if(val&&user.user)
@@ -108,7 +122,8 @@ const article = { email:user.email,password:user.password };
       
 
       
-      
+ 
+  window.scrollTo(0,document.body.clientHeight);
         document.getElementById("message").value="";
     
        
@@ -123,20 +138,8 @@ const article = { email:user.email,password:user.password };
          <Msg  messages={this.state.messages} user={user.user}/>
         
          <Input send={this.send}/>
-         <div  id="blank">
-
-            sds
-
-         </div>
-         <div  id="blank">
-
-            
-
-         </div><div  id="blank">
-
-            
-
-</div>
+        
+      
          </div>}
 
          {!user.user && <div>
@@ -146,7 +149,11 @@ const article = { email:user.email,password:user.password };
            
            </div>}
          
-        
+           <div  id="blank">
+
+            
+
+         </div>
          
     </div>
 

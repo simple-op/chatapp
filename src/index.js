@@ -5,17 +5,17 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import firebase from "firebase"
-const firebaseConfig = {
-    apiKey: "AIzaSyDkBHjojHP4SOyeJPToP16U1_G5xHE4Abo",
-    authDomain: "cart-99523.firebaseapp.com",
-    databaseURL: "https://cart-99523.firebaseio.com",
-    projectId: "cart-99523",
-    storageBucket: "cart-99523.appspot.com",
-    messagingSenderId: "160819604622",
-    appId: "1:160819604622:web:16d374e4b14a84010f6ddf"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+var firebaseConfig = {
+  apiKey: "AIzaSyDMcpn_CpuFVMKGCj5_lTTGOGUHZEHsn4k",
+  authDomain: "cart-e400a.firebaseapp.com",
+  databaseURL: "https://cart-e400a.firebaseio.com",
+  projectId: "cart-e400a",
+  storageBucket: "cart-e400a.appspot.com",
+  messagingSenderId: "202602848158",
+  appId: "1:202602848158:web:8a64a92fa53b7ee7f4c08f"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
   <React.StrictMode>
