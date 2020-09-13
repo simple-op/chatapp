@@ -86,11 +86,11 @@ class App extends React.Component {
   console.log(event)
   
 const article = { email:user.email,password:user.password };
-    axios.post('http://192.168.0.108:8000/login', article).then((resp)=> {user.user=resp.data.name
+    axios.post('https://chat-db.herokuapp.com/login', article).then((resp)=> {user.user=resp.data.name
     
       
       if(!user.user){
-          alert("Wrong username/passcode")
+          alert(resp.data.error)
       }
      else{
       

@@ -18,7 +18,7 @@ function Form(props){
         </label>
         <br/>
         <button onClick={props.login}>Submit</button>
-        <button><a href="https://chatlogin-app/signup">Signup</a></button>
+        <button><a href="https://chat-db.herokuapp.com/signup">Signup</a></button>
 
       
        </div>  
