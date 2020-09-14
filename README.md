@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is [Live At](https://determined-morse-7bb646.netlify.app)
 
 ## Available Scripts
 
