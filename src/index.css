@@ -32,7 +32,7 @@ button {
 img{
    height: 35px;
    position:fixed;
-   bottom: 10px;
+   bottom: 20px;
    right: 5%;
    background-color: aqua;
    border-radius: 50%;
