@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import firebase from "firebase"
-const firebaseConfig = {
+var firebaseConfig = {
   apiKey: "AIzaSyDkBHjojHP4SOyeJPToP16U1_G5xHE4Abo",
   authDomain: "cart-99523.firebaseapp.com",
   databaseURL: "https://cart-99523.firebaseio.com",
